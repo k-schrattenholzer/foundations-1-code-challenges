@@ -70,9 +70,9 @@ Output:
 */
 
 export function getAllFruitsThatCostMoreThanTwo(arr) {
-    const fruits = arr.filter(product => product.category === 'fruit');
-    const spendyFruits = fruits.filter(product => product.price > 2);
-    return spendyFruits;
+    const spensyFruit = arr.filter(product => product.category === 'fruit')
+        .filter(product => product.price > 2);
+    return spensyFruit;
 }
 
 
@@ -87,7 +87,8 @@ Output:
 */
 
 export function findTheCheese(arr) {
-    return [];
+    const theCheese = arr.find(product => product.id === 'cheese');
+    return theCheese;
 }
 
 
