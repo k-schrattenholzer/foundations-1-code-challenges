@@ -98,11 +98,10 @@ Output:
 */
 
 export function listNamesOfAllFruits(arr) {
-    let fruitList = '';
     let fruitArray = arr.filter(product => product.category === 'fruit');
-    let fruitNames = fruitArray.forEach(item => {
-        return fruitList + item.id;}
-    );
-    // const nameList = fruitNames + names.id;
+    
+    const fruitNames = fruitArray.map(fruit => {
+        return fruit.id;
+    });
     return fruitNames;
 }
