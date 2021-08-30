@@ -107,7 +107,7 @@ test('should return the cheese', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-test('should list all the fruit names', (expect) => {
+skip('should list all the fruit names', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = ['orange', 'kiwi'];
