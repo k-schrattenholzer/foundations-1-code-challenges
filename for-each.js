@@ -50,15 +50,29 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    let spanishArray = arr.map(({
-        name: nombre,
-        type: tipo,
-        ...rest
-    }) => ({
-        nombre,
-        tipo,
-        ...rest
-    }));
+    const updateKeys = { name: "nombre", type: "tipo" };
+    const spanishArray = changeKeys(arr, updateKeys);
     return spanishArray;
 }
+
+const changeKeys = (arr, updatedKey) => {
+    return arr.map(item => {
+        const newItem = {};
+        Object.keys(item).forEach(key => {
+            newItem[updatedKey[key]] = item[[key]];
+        });
+        return newItem;
+    });
+};
+
+// export function makeSpanishLanguageArray(arr) {
+//     let spanishArray = arr.map(({
+//         name: nombre,
+//         type: tipo
+//     }) => ({
+//         nombre,
+//         tipo
+//     }));
+//     return spanishArray;
+// }
 
