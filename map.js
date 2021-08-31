@@ -36,7 +36,9 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    return [];
+    // const hungryPets = arr.filter(pets => pets.isHungry === 'true');
+    const hungryPetArray = arr.map(arr => ({...arr, isHungry: true }));
+    return hungryPetArray;
 }
 
 /*
@@ -50,7 +52,11 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    return [];
+    const loudArray = arr.map(pet => {
+        let loudNames = arr.replace(pet.name, pet.name.toUpperCase());
+        return loudNames;
+    });
+    return loudArray;
 }
 
 

@@ -105,3 +105,13 @@ export function listNamesOfAllFruits(arr) {
     });
     return fruitNames;
 }
+
+// export function listNamesOfAllFruits(arr) {
+//     let fruitList = '';
+//     
+//     let fruitNames = fruitArray.forEach(item => {
+//         return fruitList + item.id;}
+//     );
+//     // const nameList = fruitNames + names.id;
+//     return fruitNames;
+// }
