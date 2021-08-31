@@ -38,8 +38,11 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
+    const screamingKeys = { wheels: 'WHEELS', type: 'TYPE', goes: 'GOES' };
+    const screamingArray = changeKeys(someObject, updatedKey)
     return {};
 }
+
 
 /*
 Output:
