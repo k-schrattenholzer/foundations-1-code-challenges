@@ -67,7 +67,7 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    return arr.map(item => item.name + item.type);
 }
 
 /*
