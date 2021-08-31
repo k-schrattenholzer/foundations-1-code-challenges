@@ -52,11 +52,11 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    const loudArray = arr.map(pet => {
-        let loudNames = arr.replace(pet.name, pet.name.toUpperCase());
-        return loudNames;
+    return arr.map(item => {
+        return {
+            name: item.name.toUpperCase(),
+            type: item.type };
     });
-    return loudArray;
 }
 
 
